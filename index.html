@@ -127,4 +127,236 @@
     </section>
 
     <!-- Stories & Impact -->
-    <section id="stories" class="bg-stone-100/70 py-24 px-6 border-y border
+    <section id="stories" class="bg-stone-100/70 py-24 px-6 border-y border-stone-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <h2 id="stories-heading" class="text-3xl font-bold text-stone-900 mb-2">Stories & Aspirations</h2>
+                    <p id="stories-subheading" class="text-stone-600">See the difference our rotating groups make and where we wish to grow next.</p>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-stone-200 shadow-sm">
+                    <span id="story-tag-1" class="inline-block text-xs font-semibold text-brand-700 bg-brand-50 px-3 py-1 rounded-full mb-4">Daily Impact</span>
+                    <h3 id="story-1-title" class="text-xl font-bold text-stone-900 mb-3">Restoring Hope in the Wards</h3>
+                    <p id="story-1-desc" class="text-stone-600 leading-relaxed mb-6">
+                        When patients arrive with no relatives to look after them, simple tasks become overwhelming. Our rotating daily groups step in like family—ensuring fresh clothes, clean surroundings, and a listening ear every single day.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-stone-200 shadow-sm">
+                    <span id="story-tag-2" class="inline-block text-xs font-semibold text-brand-700 bg-brand-50 px-3 py-1 rounded-full mb-4">Future Goals</span>
+                    <h3 id="story-2-title" class="text-xl font-bold text-stone-900 mb-3">Our Vision to Expand Care</h3>
+                    <p id="story-2-desc" class="text-stone-600 leading-relaxed mb-6">
+                        We wish to serve as a stepping stone for anyone inspired to help. Our goal is to extend our reach to more regional hospitals, supply hygiene care kits, and build a permanent volunteer network across communities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section id="get-involved" class="py-24 px-6 max-w-4xl mx-auto text-center">
+        <h2 id="contact-heading" class="text-3xl font-bold text-stone-900 mb-4">Be a Stepping Stone</h2>
+        <p id="contact-subheading" class="text-stone-600 max-w-xl mx-auto mb-10">
+            Whether you want to join our daily visiting groups, contribute resources, or simply learn more about what we do, we would love to connect with you.
+        </p>
+        <div class="bg-white p-8 md:p-12 rounded-3xl border border-stone-200 shadow-sm text-left max-w-2xl mx-auto">
+            <form onsubmit="event.preventDefault(); alert(translations[currentLang].alertSuccess);" class="space-y-6">
+                <div>
+                    <label id="form-label-name" class="block text-sm font-medium text-stone-700 mb-2">Your Name</label>
+                    <input type="text" required class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-brand-600" placeholder="Enter your full name">
+                </div>
+                <div>
+                    <label id="form-label-contact" class="block text-sm font-medium text-stone-700 mb-2">Email Address or Phone Number</label>
+                    <input type="text" required class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-brand-600" placeholder="How can we reach you?">
+                </div>
+                <div>
+                    <label id="form-label-msg" class="block text-sm font-medium text-stone-700 mb-2">How would you like to help?</label>
+                    <textarea rows="4" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-brand-600" placeholder="Tell us what interests you..."></textarea>
+                </div>
+                <button type="submit" id="form-submit" class="w-full bg-brand-900 hover:bg-brand-700 text-white font-medium py-4 rounded-xl transition-all shadow-sm">
+                    Submit Inquiry
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-12 px-6 border-t border-stone-800">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between text-sm space-y-4 md:space-y-0">
+            <div>
+                <span class="text-stone-200 font-bold">Urukundo Nyampuhwe</span> &copy; 2026. All rights reserved.
+            </div>
+            <div class="italic text-stone-400 font-medium">
+                &ldquo;Narindwaye Uransura&rdquo;
+            </div>
+        </div>
+    </footer>
+
+    <!-- Translation Dictionary & Script -->
+    <script>
+        const translations = {
+            en: {
+                navMission: "Mission",
+                navCare: "Daily Care",
+                navStories: "Stories & Impact",
+                navInvolved: "Get Involved",
+                navBtn: "Join Us",
+                heroTitle: "Care, dignity, and presence for patients without guardians.",
+                heroDesc: "We believe no one should face illness alone. Through daily volunteer visits, we bathe, wash clothes, pray with, and restore human warmth to vulnerable hospital patients who have nobody else to turn to.",
+                heroBtn1: "Support Our Mission",
+                heroBtn2: "Learn How We Help",
+                mottoQuote: "Narindwaye Uransura",
+                mottoTranslation: "“I was sick and you visited me”",
+                sectionCareTitle: "Our Daily Commitment",
+                sectionCareDesc: "Patients without family or guardians often struggle with basic hygiene and comfort during long hospital stays. Our teams change daily to provide consistent care.",
+                card1Title: "Bathing & Hygiene",
+                card1Desc: "Providing physical care, refreshing baths, and clean skin support for patients who cannot manage on their own.",
+                card2Title: "Washing Clothes",
+                card2Desc: "Collecting, washing, and returning clean garments so patients maintain personal pride and dignity throughout recovery.",
+                card3Title: "Prayer & Companionship",
+                card3Desc: "Offering spiritual solace, emotional encouragement, and heartfelt conversation to chase away loneliness and despair.",
+                storiesHeading: "Stories & Aspirations",
+                storiesSubheading: "See the difference our rotating groups make and where we wish to grow next.",
+                storyTag1: "Daily Impact",
+                story1Title: "Restoring Hope in the Wards",
+                story1Desc: "When patients arrive with no relatives to look after them, simple tasks become overwhelming. Our rotating daily groups step in like family—ensuring fresh clothes, clean surroundings, and a listening ear every single day.",
+                storyTag2: "Future Goals",
+                story2Title: "Our Vision to Expand Care",
+                story2Desc: "We wish to serve as a stepping stone for anyone inspired to help. Our goal is to extend our reach to more regional hospitals, supply hygiene care kits, and build a permanent volunteer network across communities.",
+                contactHeading: "Be a Stepping Stone",
+                contactSubheading: "Whether you want to join our daily visiting groups, contribute resources, or simply learn more about what we do, we would love to connect with you.",
+                formLabelName: "Your Name",
+                formLabelContact: "Email Address or Phone Number",
+                formLabelMsg: "How would you like to help?",
+                formSubmit: "Submit Inquiry",
+                alertSuccess: "Thank you for reaching out to Urukundo Nyampuhwe! We will get in touch with you soon."
+            },
+            rw: {
+                navMission: "Intego",
+                navCare: "Ubufasha bwa Buri Munsi",
+                navStories: "Inkuru n'Ibyagezweho",
+                navInvolved: "Fatanya Natwe",
+                navBtn: "Twifatanye",
+                heroTitle: "Urukundo, icyubahiro, no kuba hafi y'abarwayi batagira ababarwaza.",
+                heroDesc: "Twemera ko nta muntu ukwiye kumara uburwayi bwonyine. Binyuze mu gusura abarwayi buri munsi, dutanga isuku, tukamesa imyenda yabo, tugasenga nabo, tukagarura ubushyuhe bw'umuntu kuri bagenzi bacu bakeneye ubufasha.",
+                heroBtn1: "Shyigikira Intego Yacu",
+                heroBtn2: "Menya Uburyo Dufasha",
+                mottoQuote: "Narindwaye Uransura",
+                mottoTranslation: "“Nari ndwaye munsura”",
+                sectionCareTitle: "Inshingano Zacu za Buri Munsi",
+                sectionCareDesc: "Abarwayi batagira abavandimwe cyangwa ababarwaza bakunze kugorwa no kwita ku isuku yabo mu gihe cy'uburwayi burebure. Amatsinda yacu ajyayo buri munsi kugira ngo atange ubufasha buhoraho.",
+                card1Title: "Gukaraba n'Isuku",
+                card1Desc: "Gutanga ubufasha bw'umubiri, gukaraba, no gufasha abarwayi badashobora kwibyaza umusaruro ubwabo.",
+                card2Title: "Gumesa Imyenda",
+                card2Desc: "Guteranya, gumesa, no kugarura imyenda isukuye kugira ngo abarwayi bakomeze kugira icyubahiro mu gihe cyo gukira.",
+                card3Title: "Gusenga no Kuba hafi",
+                card3Desc: "Gutanga ihumure ry'umwuka, inkunga y'ibitekerezo, n'ibiganiro by'urukundo byirukana ukwiheba.",
+                storiesHeading: "Inkuru n'Icyerekezo",
+                storiesSubheading: "Reba itandukaniro amatsinda yacu akora naho twifuza kugera ejo hazaza.",
+                storyTag1: "Ingaruka za Buri Munsi",
+                story1Title: "Kugarura Ibyiringiro mu Bitaro",
+                story1Desc: "Abarwayi iyo bageze ku bitaro nta muryango ubakurikirana, imirimo yoroshye ihindurwa iyiremereye. Amatsinda yacu ajya muanya nk'umuryango—yemeza imyenda mishya, isuku, n'ugutwi kumva buri munsi.",
+                storyTag2: "Intego z'Ejo Hazaza",
+                story2Title: "Icyerekezo cyo Kwagura Ubufasha",
+                story2Desc: "Twifuza kuba ikiraro ku muntu wese wifuza gufasha. Intego yacu ni ukwagura ibitaro dukoreramo no kubaka urusobe rw'abakorerabushake.",
+                contactHeading: "Ba Ikiraro cy'Urukundo",
+                contactSubheading: "Waba wifuza kwinjira mu matsinda yacu y'abasura, gutanga ubufasha, cyangwa kumenya byinshi, twishimiye ko twavugana.",
+                formLabelName: "Amazina Yawe",
+                formLabelContact: "Imeyili cyangwa Nimero ya Telefone",
+                formLabelMsg: "Wifuza gufasha ute?",
+                formSubmit: "Ohereza ubutumwa",
+                alertSuccess: "Murakoze kwandikira Urukundo Nyampuhwe! Tuzabamenyesha vuba."
+            },
+            fr: {
+                navMission: "Mission",
+                navCare: "Soins Quotidiens",
+                navStories: "Histoires & Impact",
+                navInvolved: "S'impliquer",
+                navBtn: "Rejoignez-nous",
+                heroTitle: "Soin, dignité et présence pour les patients sans tuteurs.",
+                heroDesc: "Nous croyons que personne ne devrait affronter la maladie seul. Grâce à des visites quotidiennes, nous lavons les patients, nettoyons leurs vêtements, prions avec eux et redonnons de la chaleur humaine aux patients vulnérables.",
+                heroBtn1: "Soutenir notre mission",
+                heroBtn2: "Découvrir notre action",
+                mottoQuote: "Narindwaye Uransura",
+                mottoTranslation: "“J'étais malade et vous m'avez visité”",
+                sectionCareTitle: "Notre Engagement Quotidien",
+                sectionCareDesc: "Les patients sans famille luttent souvent pour leur hygiène de base à l'hôpital. Nos équipes se relayent chaque jour pour leur apporter un soutien constant.",
+                card1Title: "Bains & Hygiène",
+                card1Desc: "Fournir des soins corporels et un soutien d'hygiène essentiel aux patients qui ne peuvent le faire seuls.",
+                card2Title: "Lavage des Vêtements",
+                card2Desc: "Collecter, laver et restituer des vêtements propres pour que les patients conservent leur dignité pendant leur guérison.",
+                card3Title: "Prière & Compagnonnage",
+                card3Desc: "Offrir un réconfort spirituel, un soutien émotionnel et une écoute attentive pour chasser la solitude.",
+                storiesHeading: "Histoires & Aspirations",
+                storiesSubheading: "Découvrez l'impact de nos groupes de bénévoles et nos ambitions futures.",
+                storyTag1: "Impact Quotidien",
+                story1Title: "Restaurer l'espoir dans les services",
+                story1Desc: "Lorsqu'arrivent des patients sans proches, les tâches simples deviennent insurmontables. Nos groupes quotidiens interviennent comme une famille pour assurer propreté et écoute.",
+                storyTag2: "Objectifs Futurs",
+                story2Title: "Notre vision pour élargir les soins",
+                story2Desc: "Nous souhaitons être un tremplin pour quiconque souhaite aider, étendre notre portée à d'autres hôpitaux et créer un réseau permanent de bénévoles.",
+                contactHeading: "Devenez un tremplin",
+                contactSubheading: "Que vous souhaitiez rejoindre nos groupes de visite, contribuer ou simplement en savoir plus, nous serions ravis d'échanger avec vous.",
+                formLabelName: "Votre Nom",
+                formLabelContact: "Adresse e-mail ou Numéro de téléphone",
+                formLabelMsg: "Comment aimeriez-vous aider ?",
+                formSubmit: "Envoyer la demande",
+                alertSuccess: "Merci d'avoir contacté Urukundo Nyampuhwe ! Nous vous répondrons bientôt."
+            }
+        };
+
+        let currentLang = 'en';
+
+        function changeLanguage(lang) {
+            currentLang = lang;
+            const t = translations[lang];
+
+            // Nav
+            document.querySelector('.nav-mission').innerText = t.navMission;
+            document.querySelector('.nav-care').innerText = t.navCare;
+            document.querySelector('.nav-stories').innerText = t.navStories;
+            document.querySelector('.nav-involved').innerText = t.navInvolved;
+            document.querySelector('.nav-btn').innerText = t.navBtn;
+
+            // Hero
+            document.getElementById('hero-title').innerText = t.heroTitle;
+            document.getElementById('hero-desc').innerText = t.heroDesc;
+            document.getElementById('hero-btn-1').innerText = t.heroBtn1;
+            document.getElementById('hero-btn-2').innerText = t.heroBtn2;
+
+            // Motto banner
+            document.getElementById('motto-quote').innerText = t.mottoQuote;
+            document.getElementById('motto-translation').innerText = t.mottoTranslation;
+
+            // Care section
+            document.getElementById('section-care-title').innerText = t.sectionCareTitle;
+            document.getElementById('section-care-desc').innerText = t.sectionCareDesc;
+            document.getElementById('card-1-title').innerText = t.card1Title;
+            document.getElementById('card-1-desc').innerText = t.card1Desc;
+            document.getElementById('card-2-title').innerText = t.card2Title;
+            document.getElementById('card-2-desc').innerText = t.card2Desc;
+            document.getElementById('card-3-title').innerText = t.card3Title;
+            document.getElementById('card-3-desc').innerText = t.card3Desc;
+
+            // Stories
+            document.getElementById('stories-heading').innerText = t.storiesHeading;
+            document.getElementById('stories-subheading').innerText = t.storiesSubheading;
+            document.getElementById('story-tag-1').innerText = t.storyTag1;
+            document.getElementById('story-1-title').innerText = t.story1Title;
+            document.getElementById('story-1-desc').innerText = t.story1Desc;
+            document.getElementById('story-tag-2').innerText = t.storyTag2;
+            document.getElementById('story-2-title').innerText = t.story2Title;
+            document.getElementById('story-2-desc').innerText = t.story2Desc;
+
+            // Contact Form
+            document.getElementById('contact-heading').innerText = t.contactHeading;
+            document.getElementById('contact-subheading').innerText = t.contactSubheading;
+            document.getElementById('form-label-name').innerText = t.formLabelName;
+            document.getElementById('form-label-contact').innerText = t.formLabelContact;
+            document.getElementById('form-label-msg').innerText = t.formLabelMsg;
+            document.getElementById('form-submit').innerText = t.formSubmit;
+        }
+    </script>
+</body>
+</html>
